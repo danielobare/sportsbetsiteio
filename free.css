@@ -513,3 +513,27 @@ th {
     font-size: 16px;
     margin-top: 20px;
 }
+
+.scroll-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: navy;
+    color: lime;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.scroll-content {
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
